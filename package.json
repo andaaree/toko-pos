@@ -1,0 +1,35 @@
+{
+  "name": "toko-pos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "POS & Product Margin Management Dashboard",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@supabase/supabase-js": "^2.112.4",
+    "axios": "^1.20.0",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.10.0",
+    "next": "^14.2.35",
+    "next-auth": "^4.24.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.86.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.20.1",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
+  }
+}
