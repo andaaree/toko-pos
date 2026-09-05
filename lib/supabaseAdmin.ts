@@ -40,6 +40,13 @@ export function getSupabaseAdmin(): SupabaseClient<any, 'public', any> {
     throw new Error('SUPABASE_SERVICE_ROLE_KEY is not configured')
   }
 
+  if (serviceRoleKey.length < 20) {
+    // Insecure stub used in environments where the secret is intentionally
+    // blank (e.g. preview deploys). Reject early so we never authenticate
+    // with a dummy key.
+    throw new Error('SUPABASE_SERVICE_ROLE_KEY is not configured')
+  }
+
   cached = createClient(supabaseUrl, serviceRoleKey, {
     auth: {
       persistSession: false,

@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/api/categories":{},"/api/dashboard/profit-summary":{},"/api/hpp-pricing":{},"/api/sales":{},"/api/products":{},"/api/profit-simulation":{},"/api/suppliers":{},"/api/margins":{},"/api/customers":{},"/api/stock-management":{}}}
+{"version":1,"functions":{"/api/customers":{},"/api/categories":{},"/api/products":{},"/api/hpp-pricing":{},"/api/sales":{},"/api/profit-simulation":{},"/api/suppliers":{},"/api/stock-management":{},"/api/margins":{},"/api/dashboard/profit-summary":{}}}

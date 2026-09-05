@@ -17,62 +17,59 @@ export const authOptions: NextAuthOptions = {
           return null
         }
 
-        // MUST use service_role: 0001 puts ENABLE + FORCE ROW LEVEL SECURITY on
-        // users and defines NO anon policy (anon_read covers only the 10
-        // business tables). Reading users with the anon client always returns an
-        // RLS error, so this lookup failed for every credential and login was
-        // impossible for all accounts.
-        const admin = getSupabaseAdmin()
-        const { data: user, error } = await admin
-          .from('users')
-          .select('id, username, email, name, password_hash, role, is_active')
-          .eq('username', credentials.username)
-          .single()
+        try {
+          // MUST use service_role: 0001 puts ENABLE + FORCE ROW LEVEL SECURITY on
+          // users and defines NO anon policy.
+          const admin = getSupabaseAdmin()
+          const loginInput = credentials.username.trim()
 
-        if (error || !user) {
+          // Query by username OR email to allow signing in with either credential
+          const { data: user, error } = await admin
+            .from('users')
+            .select('id, username, email, name, password_hash, role, is_active')
+            .or(`username.eq.${loginInput},email.eq.${loginInput}`)
+            .maybeSingle()
+
+          if (error || !user) {
+            console.error('[auth] User lookup failed or not found:', error?.message || 'User not found')
+            return null
+          }
+
+          const row = user as {
+            id: number
+            username: string
+            email: string | null
+            name: string | null
+            password_hash: string
+            role: string
+            is_active: boolean | null
+          }
+
+          if (row.is_active === false) {
+            return null
+          }
+
+          if (!row.password_hash) {
+            return null
+          }
+
+          const isValid = await bcrypt.compare(credentials.password, row.password_hash)
+
+          if (!isValid) {
+            return null
+          }
+
+          return {
+            id: String(row.id),
+            username: row.username,
+            email: row.email,
+            name: row.name,
+            role: row.role,
+            isActive: true
+          }
+        } catch (err) {
+          console.error('[auth] Authorize exception:', err)
           return null
-        }
-
-        const row = user as {
-          id: number
-          username: string
-          email: string | null
-          name: string | null
-          password_hash: string
-          role: string
-          is_active: boolean | null
-        }
-
-        // Disabled accounts must not obtain a session. requireUser() rejects
-        // them per request, but without this check a deactivated user could
-        // still sign in and hold a valid token.
-        if (row.is_active === false) {
-          return null
-        }
-
-        if (!row.password_hash) {
-          return null
-        }
-
-        const isValid = await bcrypt.compare(credentials.password, row.password_hash)
-
-        if (!isValid) {
-          return null
-        }
-
-        return {
-          // NextAuth's User.id is typed as string by contract; the database
-          // column is an integer. Converted here, and parsed back where a
-          // numeric id is needed (lib/apiAuth requireUser).
-          id: String(row.id),
-          username: row.username,
-          email: row.email,
-          name: row.name,
-          role: row.role,
-          // Narrowed to true by the is_active === false guard above; a NULL
-          // column (pre-existing rows created before the is_active migration)
-          // is treated as active.
-          isActive: true
         }
       }
     })
