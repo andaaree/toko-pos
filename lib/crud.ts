@@ -121,7 +121,13 @@ export function makeUpdateHandler(cfg: CrudConfig) {
       await requireAdmin()
       const raw = await parseBody(req)
 
-      const id = Number(raw?.id)
+      // Accept the id from the query string OR the body. DELETE reads it from
+      // the query string; PATCH previously only read the body, so the same
+      // resource had two different addressing conventions and a query-string
+      // PATCH returned 400 instead of acting on the row.
+      const { searchParams } = new URL(req.url)
+      const idParam = searchParams.get('id')
+      const id = Number(idParam !== null ? idParam : raw?.id)
       if (!Number.isInteger(id) || id <= 0) {
         return NextResponse.json({ error: 'A positive integer id is required' }, { status: 400 })
       }

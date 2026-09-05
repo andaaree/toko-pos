@@ -1,0 +1,474 @@
+{
+  "communities": {
+    "0": [
+      "app_api_categories_route",
+      "app_api_categories_route_cfg",
+      "app_api_categories_route_delete",
+      "app_api_categories_route_dynamic",
+      "app_api_categories_route_get",
+      "app_api_categories_route_patch",
+      "app_api_categories_route_post",
+      "app_api_customers_route",
+      "app_api_customers_route_cfg",
+      "app_api_customers_route_delete",
+      "app_api_customers_route_dynamic",
+      "app_api_customers_route_get",
+      "app_api_customers_route_patch",
+      "app_api_customers_route_post",
+      "app_api_margins_route",
+      "app_api_margins_route_cfg",
+      "app_api_margins_route_delete",
+      "app_api_margins_route_dynamic",
+      "app_api_margins_route_get",
+      "app_api_margins_route_patch",
+      "app_api_margins_route_post",
+      "app_api_products_route",
+      "app_api_products_route_cfg",
+      "app_api_products_route_delete",
+      "app_api_products_route_dynamic",
+      "app_api_products_route_get",
+      "app_api_products_route_patch",
+      "app_api_products_route_post",
+      "app_api_suppliers_route",
+      "app_api_suppliers_route_cfg",
+      "app_api_suppliers_route_delete",
+      "app_api_suppliers_route_dynamic",
+      "app_api_suppliers_route_get",
+      "app_api_suppliers_route_patch",
+      "app_api_suppliers_route_post",
+      "lib_apiauth_requireadmin",
+      "lib_crud",
+      "lib_crud_crudconfig",
+      "lib_crud_makecreatehandler",
+      "lib_crud_makedeletehandler",
+      "lib_crud_makelisthandler",
+      "lib_crud_makeupdatehandler",
+      "lib_crud_mapdberror",
+      "lib_crud_parsebody",
+      "lib_validation",
+      "lib_validation_categoryschema",
+      "lib_validation_categoryupdateschema",
+      "lib_validation_createsaleschema",
+      "lib_validation_customerschema",
+      "lib_validation_customerupdateschema",
+      "lib_validation_id",
+      "lib_validation_idparamschema",
+      "lib_validation_marginbaseschema",
+      "lib_validation_marginupdateschema",
+      "lib_validation_money",
+      "lib_validation_productschema",
+      "lib_validation_productupdateschema",
+      "lib_validation_saleitemschema",
+      "lib_validation_stockadjustmentschema",
+      "lib_validation_stockmutationschema",
+      "lib_validation_supplierschema",
+      "lib_validation_supplierupdateschema"
+    ],
+    "1": [
+      "app_api_auth_nextauth_route",
+      "app_api_auth_nextauth_route_handler",
+      "app_api_dashboard_profit_summary_route",
+      "app_api_dashboard_profit_summary_route_dynamic",
+      "app_api_dashboard_profit_summary_route_get",
+      "app_api_dashboard_profit_summary_route_supabase",
+      "app_api_hpp_pricing_route",
+      "app_api_hpp_pricing_route_dynamic",
+      "app_api_hpp_pricing_route_get",
+      "app_api_hpp_pricing_route_post",
+      "app_api_hpp_pricing_route_supabase",
+      "app_api_profit_simulation_route",
+      "app_api_profit_simulation_route_dynamic",
+      "app_api_profit_simulation_route_get",
+      "app_api_profit_simulation_route_supabase",
+      "app_api_sales_route",
+      "app_api_sales_route_dynamic",
+      "app_api_sales_route_post",
+      "app_api_stock_management_route",
+      "app_api_stock_management_route_dynamic",
+      "app_api_stock_management_route_get",
+      "app_api_stock_management_route_post",
+      "lib_apiauth",
+      "lib_apiauth_apiautherror",
+      "lib_apiauth_apiautherror_constructor",
+      "lib_apiauth_autheduser",
+      "lib_apiauth_requireuser",
+      "lib_apiauth_toerrorresponse",
+      "lib_auth",
+      "lib_auth_authoptions",
+      "lib_supabaseadmin",
+      "lib_supabaseadmin_getsupabaseadmin",
+      "lib_validation_marginschema"
+    ],
+    "2": [
+      "autoprefixer",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_jest",
+      "package_devdependencies_postcss",
+      "package_devdependencies_supertest",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_testing_library_jest_dom",
+      "package_devdependencies_testing_library_react",
+      "package_devdependencies_testing_library_user_event",
+      "package_devdependencies_ts_jest",
+      "package_devdependencies_types_bcryptjs",
+      "package_devdependencies_types_jest",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_types_supertest",
+      "package_devdependencies_typescript",
+      "package_json_jest",
+      "package_json_tailwindcss",
+      "postcss",
+      "supertest",
+      "testing_library_jest_dom",
+      "testing_library_react",
+      "testing_library_user_event",
+      "ts_jest",
+      "types_bcryptjs",
+      "types_jest",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "types_supertest",
+      "typescript"
+    ],
+    "3": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_node_modules",
+      "ref_ts",
+      "ref_tsx",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "4": [
+      "axios",
+      "bcryptjs",
+      "jose",
+      "modelcontextprotocol_sdk",
+      "next",
+      "next_auth",
+      "package_dependencies",
+      "package_dependencies_axios",
+      "package_dependencies_bcryptjs",
+      "package_dependencies_jose",
+      "package_dependencies_modelcontextprotocol_sdk",
+      "package_dependencies_next",
+      "package_dependencies_next_auth",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_hook_form",
+      "package_dependencies_supabase_supabase_js",
+      "package_dependencies_zod",
+      "react",
+      "react_dom",
+      "react_hook_form",
+      "supabase_supabase_js",
+      "zod"
+    ],
+    "5": [
+      "tests_backend_anonhpp_test",
+      "tests_backend_anonhpp_test_db",
+      "tests_backend_anonhpp_test_pub",
+      "tests_backend_concurrentsale_test",
+      "tests_backend_concurrentsale_test_db",
+      "tests_backend_helpers",
+      "tests_backend_helpers_admin",
+      "tests_backend_helpers_anon",
+      "tests_backend_helpers_api",
+      "tests_backend_helpers_base_url",
+      "tests_backend_helpers_env",
+      "tests_backend_helpers_migration0002applied",
+      "tests_backend_helpers_signin",
+      "tests_backend_missingid_test"
+    ],
+    "6": [
+      "app_dashboard_layout",
+      "app_dashboard_layout_dashboardlayout",
+      "app_hpp_pricing_layout",
+      "app_hpp_pricing_layout_hpppricinglayout",
+      "app_profit_simulation_layout",
+      "app_profit_simulation_layout_profitsimulationlayout",
+      "app_stock_management_layout",
+      "app_stock_management_layout_stockmanagementlayout",
+      "components_appshell",
+      "components_appshell_appshell",
+      "components_appshell_navigation",
+      "components_appshell_useisadmin"
+    ],
+    "7": [
+      "package",
+      "package_description",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_scripts_test_backend",
+      "package_scripts_test_frontend",
+      "package_version"
+    ],
+    "8": [
+      "app_profit_simulation_page",
+      "app_profit_simulation_page_product",
+      "app_profit_simulation_page_profitsimulationpage",
+      "app_profit_simulation_page_rupiah",
+      "app_profit_simulation_page_simresult",
+      "app_stock_management_page",
+      "app_stock_management_page_statusof",
+      "app_stock_management_page_stockitem",
+      "app_stock_management_page_stockmanagementpage",
+      "lib_supabase",
+      "lib_supabase_supabase"
+    ],
+    "9": [
+      "local_mcp_server",
+      "local_mcp_server_calltoolrequestschema_listtoolsrequestschema",
+      "local_mcp_server_exec",
+      "local_mcp_server_execpromise",
+      "local_mcp_server_fs",
+      "local_mcp_server_run",
+      "local_mcp_server_server",
+      "local_mcp_server_stdioservertransport",
+      "local_mcp_server_util"
+    ],
+    "10": [
+      "types_next_auth_d",
+      "types_next_auth_d_jwt",
+      "types_next_auth_d_next_auth",
+      "types_next_auth_d_next_auth_jwt",
+      "types_next_auth_d_session",
+      "types_next_auth_d_user"
+    ],
+    "11": [
+      "app_dashboard_page",
+      "app_dashboard_page_dashboardpage",
+      "app_dashboard_page_periodtype",
+      "app_dashboard_page_rupiah",
+      "app_dashboard_page_summaryrow"
+    ],
+    "12": [
+      "app_layout",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_providers",
+      "app_providers_providers"
+    ],
+    "13": [
+      "app_hpp_pricing_page",
+      "app_hpp_pricing_page_hpppricingpage",
+      "app_hpp_pricing_page_product",
+      "app_hpp_pricing_page_rupiah"
+    ],
+    "14": [
+      "tests_backend_loadenv",
+      "tests_backend_loadenv_load",
+      "tests_backend_loadenv_root"
+    ],
+    "15": [
+      "app_login_page",
+      "app_login_page_loginpage"
+    ],
+    "16": [
+      "app_page",
+      "app_page_home"
+    ],
+    "17": [
+      "middleware",
+      "middleware_config"
+    ],
+    "18": [
+      "next_config",
+      "next_config_nextconfig"
+    ],
+    "19": [
+      "next_env_d",
+      "next_env_d_rationale_4"
+    ],
+    "20": [
+      "run_automation",
+      "run_automation_sh__entry"
+    ],
+    "21": [
+      "jest_config_backend"
+    ],
+    "22": [
+      "jest_jest"
+    ],
+    "23": [
+      "postcss_config"
+    ],
+    "24": [
+      "tailwind_config"
+    ],
+    "25": [
+      "tailwindcss_tailwindcss"
+    ]
+  },
+  "cohesion": {
+    "0": 0.053939714436805924,
+    "1": 0.13446969696969696,
+    "2": 0.06060606060606061,
+    "3": 0.07142857142857142,
+    "4": 0.08695652173913043,
+    "5": 0.2967032967032967,
+    "6": 0.22727272727272727,
+    "7": 0.16666666666666666,
+    "8": 0.2545454545454545,
+    "9": 0.2222222222222222,
+    "10": 0.3333333333333333,
+    "11": 0.5,
+    "12": 0.5,
+    "13": 0.6666666666666666,
+    "14": 0.6666666666666666,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0
+  },
+  "gods": [
+    {
+      "id": "lib_apiauth_toerrorresponse",
+      "label": "toErrorResponse()",
+      "degree": 17
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 17
+    },
+    {
+      "id": "lib_supabaseadmin_getsupabaseadmin",
+      "label": "getSupabaseAdmin()",
+      "degree": 14
+    },
+    {
+      "id": "lib_apiauth_requireadmin",
+      "label": "requireAdmin()",
+      "degree": 11
+    },
+    {
+      "id": "lib_crud_makecreatehandler",
+      "label": "makeCreateHandler()",
+      "degree": 11
+    },
+    {
+      "id": "lib_crud_makeupdatehandler",
+      "label": "makeUpdateHandler()",
+      "degree": 11
+    },
+    {
+      "id": "lib_apiauth_apiautherror",
+      "label": "ApiAuthError",
+      "degree": 10
+    },
+    {
+      "id": "lib_crud_makedeletehandler",
+      "label": "makeDeleteHandler()",
+      "degree": 10
+    },
+    {
+      "id": "lib_crud_makelisthandler",
+      "label": "makeListHandler()",
+      "degree": 7
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "GET()",
+      "target": "toErrorResponse()",
+      "source_files": [
+        "app/api/dashboard/profit-summary/route.ts",
+        "lib/apiAuth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `GET()` unexpectedly reaches hub `toErrorResponse()`"
+    },
+    {
+      "source": "POST()",
+      "target": "requireAdmin()",
+      "source_files": [
+        "app/api/hpp-pricing/route.ts",
+        "lib/apiAuth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "GET()",
+      "target": "toErrorResponse()",
+      "source_files": [
+        "app/api/profit-simulation/route.ts",
+        "lib/apiAuth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `GET()` unexpectedly reaches hub `toErrorResponse()`"
+    },
+    {
+      "source": "GET()",
+      "target": "toErrorResponse()",
+      "source_files": [
+        "app/api/stock-management/route.ts",
+        "lib/apiAuth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `GET()` unexpectedly reaches hub `toErrorResponse()`"
+    },
+    {
+      "source": "POST()",
+      "target": "requireAdmin()",
+      "source_files": [
+        "app/api/stock-management/route.ts",
+        "lib/apiAuth.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

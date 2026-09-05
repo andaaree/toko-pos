@@ -1,5 +1,19 @@
 node_modules
-# Keep environment variables out of version control
+
+# Keep environment variables out of version control.
+# Covers .env, .env.local, .env.development.local, .env.production.local, etc.
+# .env.example is force-tracked below because it holds placeholders only.
 .env
+.env.*
+!.env.example
+
+# Next.js build output — must never be committed.
+# NOTE: 231 .next files are already tracked in this repo; this entry stops new
+# ones being added but does not untrack the existing ones. See report.
+/.next
+/out
+
+# Test artifacts
+/coverage
 
 /generated/prisma

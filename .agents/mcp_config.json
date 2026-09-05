@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin/node",
+      "args": [
+        "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/lib/node_modules/npm/bin/npx-cli.js",
+        "-y",
+        "@supabase/mcp-server-supabase",
+        "--project-ref",
+        "YOUR_PROJECT_REF"
+      ],
+      "env": {
+        "PATH": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin:/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/tools/global/bin:/home/superadmin/.local/bin:/home/superadmin/.nvm/versions/node/v24.19.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.12.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/d/Andar/project/Python314/Scripts/:/mnt/d/Andar/project/Python314/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Andar/Documents/flutter/bin:/mnt/c/Users/Andar/Documents/android-cmdlinetools/cmdline-tools/latest/bin:/mnt/c/xampp/php/:/mnt/c/xampp7/php/:/mnt/c/Program Files/Java/jdk-18.0.2/bin:/mnt/c/Program Files/Java/jre-1.8/bin:/mnt/c/Program Files/Java/jdk-1.8/bin:/mnt/c/Program Files/Git/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Andar/Documents/Aliases:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andar/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/xampp/apache:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/Andar/AppData/Local/Programs/garyttierney/me3/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/Andar/Project/Python 3.13/Scripts/:/mnt/d/Andar/Project/Python 3.13/:/mnt/c/Users/Andar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andar/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Andar/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Andar/AppData/Roaming/npm:/mnt/c/Users/Andar/.fly/bin:/mnt/c/program files (x86)/steam/ext/bin:/mnt/c/Users/Andar/AppData/Local/Programs/Ollama:/mnt/c/Users/Andar/.lmstudio/bin:/snap/bin",
+        "SUPABASE_ACCESS_TOKEN": "YOUR_TOKEN",
+        "npm_config_cache": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/cache",
+        "npm_config_globalconfig": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/blank_global_npmrc",
+        "npm_config_prefix": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/tools/global",
+        "npm_config_userconfig": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/blank_user_npmrc"
+      }
+    },
+    "github": {
+      "command": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin/node",
+      "args": [
+        "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/lib/node_modules/npm/bin/npx-cli.js",
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_PAT",
+        "PATH": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin:/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/tools/global/bin:/home/superadmin/.local/bin:/home/superadmin/.nvm/versions/node/v24.19.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.12.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/d/Andar/project/Python314/Scripts/:/mnt/d/Andar/project/Python314/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Andar/Documents/flutter/bin:/mnt/c/Users/Andar/Documents/android-cmdlinetools/cmdline-tools/latest/bin:/mnt/c/xampp/php/:/mnt/c/xampp7/php/:/mnt/c/Program Files/Java/jdk-18.0.2/bin:/mnt/c/Program Files/Java/jre-1.8/bin:/mnt/c/Program Files/Java/jdk-1.8/bin:/mnt/c/Program Files/Git/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Andar/Documents/Aliases:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andar/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/xampp/apache:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/Andar/AppData/Local/Programs/garyttierney/me3/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/Andar/Project/Python 3.13/Scripts/:/mnt/d/Andar/Project/Python 3.13/:/mnt/c/Users/Andar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andar/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Andar/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Andar/AppData/Roaming/npm:/mnt/c/Users/Andar/.fly/bin:/mnt/c/program files (x86)/steam/ext/bin:/mnt/c/Users/Andar/AppData/Local/Programs/Ollama:/mnt/c/Users/Andar/.lmstudio/bin:/snap/bin",
+        "npm_config_cache": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/cache",
+        "npm_config_globalconfig": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/blank_global_npmrc",
+        "npm_config_prefix": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/tools/global",
+        "npm_config_userconfig": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/blank_user_npmrc"
+      }
+    },
+    "playwright": {
+      "command": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin/node",
+      "args": [
+        "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/lib/node_modules/npm/bin/npx-cli.js",
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {
+        "PATH": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin:/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/tools/global/bin:/home/superadmin/.local/bin:/home/superadmin/.nvm/versions/node/v24.19.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.12.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/d/Andar/project/Python314/Scripts/:/mnt/d/Andar/project/Python314/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Andar/Documents/flutter/bin:/mnt/c/Users/Andar/Documents/android-cmdlinetools/cmdline-tools/latest/bin:/mnt/c/xampp/php/:/mnt/c/xampp7/php/:/mnt/c/Program Files/Java/jdk-18.0.2/bin:/mnt/c/Program Files/Java/jre-1.8/bin:/mnt/c/Program Files/Java/jdk-1.8/bin:/mnt/c/Program Files/Git/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Users/Andar/Documents/Aliases:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Andar/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/xampp/apache:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/Andar/AppData/Local/Programs/garyttierney/me3/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/Andar/Project/Python 3.13/Scripts/:/mnt/d/Andar/Project/Python 3.13/:/mnt/c/Users/Andar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Andar/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Andar/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Andar/AppData/Roaming/npm:/mnt/c/Users/Andar/.fly/bin:/mnt/c/program files (x86)/steam/ext/bin:/mnt/c/Users/Andar/AppData/Local/Programs/Ollama:/mnt/c/Users/Andar/.lmstudio/bin:/snap/bin",
+        "npm_config_cache": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/cache",
+        "npm_config_globalconfig": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/blank_global_npmrc",
+        "npm_config_prefix": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/tools/global",
+        "npm_config_userconfig": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/blank_user_npmrc"
+      }
+    },
+    "toko-orchestrator": {
+      "command": "/home/superadmin/.aionui-web/runtime/node/node-v24.11.0-linux-x64/bin/node",
+      "args": [
+        "/home/superadmin/workspace/toko/local-mcp-server.js"
+      ],
+      "env": {}
+    }
+  }
+}
